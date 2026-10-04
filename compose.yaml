@@ -1,0 +1,19 @@
+---
+services:
+  frontend:
+    container_name: cont-f
+    build: ./frontend
+    ports:
+      - "9981:80"
+
+  backend:
+    container_name: cont-b
+    build: ./backend
+    ports:
+      - "9982:80"
+
+  database:
+    container_name: cont-d
+    build: ./database
+    ports:
+      - "9983:80"
